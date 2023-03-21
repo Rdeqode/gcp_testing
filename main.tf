@@ -1,19 +1,16 @@
-terraform {
-  required_providers {
-    google = {
-      source = "hashicorp/google"
-      version = "4.57.0"
-    }
-  }
+
+module "storage" {
+  source = "./modules/storage"
+  bucket_name = "bucket-for-testing-02"
+  location = "us-central1"
 }
 
-provider "google" {
-  project = "playground-s-11-557eb922"
-  region = "us-central1"
-  zone = "us-central1-c"
+
+module "mig" {
+    source = "./modules/mig"
+    
 }
 
-resource "google_storage_bucket" "gcb"{
-    name = "bucket-for-testing-09"
-    location = "us-central1"
-}
+
+
+
