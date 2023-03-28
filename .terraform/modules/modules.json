@@ -1,1 +1,1 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"mig","Source":"./modules/mig","Dir":"modules/mig"}]}
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"mig","Source":"./modules/mig","Dir":"modules/mig"},{"Key":"vpc","Source":"./modules/vpc","Dir":"modules/vpc"}]}
