@@ -27,3 +27,15 @@ variable "target_instances" {
   default     = 2
 
 }
+
+variable "instance_group_manager_name" {
+  default = "regional-instance-group-manager"
+
+}
+
+variable "base_instance_name" {
+  default = "instance-name"
+
+}
+
+variable "subnetwork" {}
